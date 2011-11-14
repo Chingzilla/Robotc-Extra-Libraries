@@ -77,6 +77,11 @@ void setDeadzone(Joypad * self, int joystick, int deadzone){
     }
 }
 
+void setJoystickScale(Joypad * self, double scale){
+    setJoystickScale(&self, 1, scale);
+    setJoystickScale(&self, 2, scale);
+}
+
 void setJoystickScale(Joypad * self, int joystick, double scale){
     setJoystickScale(&self, joystick, scale, scale);
 }

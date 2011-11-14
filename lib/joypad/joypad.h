@@ -74,6 +74,9 @@ typedef struct Joypad {
     void setDeadzone(*Joypad self, int joystick, int deadzone);
 
     //TODO
+    void setJoystickScale(*Joypad self, double scale);
+
+    //TODO
     void setJoystickScale(*Joypad self, int joystick, double scale);
 
     //TODO
